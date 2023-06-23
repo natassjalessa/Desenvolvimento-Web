@@ -1,0 +1,28 @@
+<!--Popup aparece quando vc coloca seu nome e sobrenome-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <h1>Escreva seu nome e sobrenome</h1>
+	<form name="area">
+		<input type="text" id="nome"/>
+		<input type="text" id="snome"/>
+	
+	<button onclick="mensagem()">Clique-me</button>
+	
+	</form>
+    <script>
+        function mensagem(){
+            var nm = document.area.nome.value;
+            var snm = document.area.snome.value;
+            alert("Oi "+nm+" "+snm+". Eu sou um robô!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!--Altera cor do texto-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 3</title>
+</head>
+<body>
+    <script>
+    function mudaCor(novaCor) {
+        var elem = document.getElementById("para1");
+        elem.style.color = novaCor;
+    }
+    </script>
+    <h1 id="para1">Altere minha cor clicando no botão</h1>
+    <button onclick="mudaCor('blue');">Azul</button>
+    <button onclick="mudaCor('red');">Vermelho</button>
+</body>
+</html>

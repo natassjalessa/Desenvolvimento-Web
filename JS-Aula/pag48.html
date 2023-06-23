@@ -1,0 +1,44 @@
+<!--Calculo com triangulo-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        #campo{border:black solid 2px;	font-size: 20px; text-align: center; width: 70px; height: 40px; } 
+    </style> 
+    <title>Questão 5</title>
+</head>
+<body>
+    <h3> Informe um numero entre 1 e 9:  </h3>
+	
+	<form name="area">
+		<input type="text" id="campo"/><br><br>
+		<input type="button" id="bt" value="Gerar triângulo" onclick="gerador()"/>
+	</form>
+    <br>
+    Saida do triangulo
+    <p id="resultado"></p>
+    <script>
+    function gerador(){
+        var numero=parseInt(document.area.campo.value);
+        if(numero<1||numero>9){
+            alert("Numero invalido,tente novamente.");
+        }
+        else{
+            res = document.getElementById("resultado");
+            res.innerHTML = ""
+            for(var i=1;i<=numero;i++){
+                for(var j=1;j<=i;j++){
+                    res.innerHTML = res.innerHTML+i;
+                }
+                res.innerHTML = res.innerHTML+"<br>";
+            }
+        }
+        
+    }
+    </script>
+</body>
+</html>

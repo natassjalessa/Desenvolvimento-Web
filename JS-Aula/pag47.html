@@ -1,0 +1,36 @@
+<!--Verifica se o campo foi preenchido-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        #campo{border:black solid 2px;	font-size: 20px; text-align: center; width: 70px; height: 40px; } 
+    </style> 
+    <title>Questão 4</title>
+</head>
+<body>
+    <h3> Escreva algo no campo  </h3>
+	
+	<form name="area">
+		<input type="text" id="campo"/><br><br>
+		<input type="button" id="bt" value="Verificar preenchimento" onclick="verificar()"/>
+	</form>
+    <br>
+    <script>
+    function verificar(){
+        var x = document.area.campo.value;
+        if (x == null || x == "") {
+            alert("O campo precisa ser preenchido.");
+        }
+        else{
+            alert("Voce digitou "+document.area.campo.value);
+            }
+        }
+        
+    
+    </script>
+</body>
+</html>
