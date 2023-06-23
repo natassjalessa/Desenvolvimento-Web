@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function trocarcor() {
+            var texto = document.getElementById("ph1");
+            var input = document.querySelector("#cor").value;
+            ph1.style.color = input;
+        }
+        function trocarcor2() {
+            var texto2 = document.getElementById("ph2");
+            var input2 = document.querySelector("#cor2").value;
+            ph2.style.color = input2;
+        }
+        function trocarcor3() {
+            var texto3 = document.getElementById("ph3");
+            var input3 = document.querySelector("#cor3").value;
+            ph3.style.color = input3;
+        }
+        
+    </script>
+</head>
+<body>
+    <h1 id="ph1">Altere minha cor clicando no botao</h1>
+    <input type="text" id="cor" name="cor"><br><br>
+    <input type="button" onclick="trocarcor()" value="Enviar uma cor">
+    <hr>
+    <h1 id="ph2">Altere minha cor clicando no botao</h1>
+    <input type="text" id="cor2" name="cor2"><br><br>
+    <input type="button" onclick="trocarcor2()" value="Enviar uma cor">
+    <hr>
+    <h1 id="ph3">Altere minha cor clicando no botao</h1>
+    <input type="text" id="cor3" name="cor3"><br><br>
+    <input type="button" onclick="trocarcor3()" value="Enviar uma cor">
+    <hr>
+</body>
+</html>

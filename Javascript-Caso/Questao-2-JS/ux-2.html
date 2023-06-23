@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        numeros = [];
+        operandos = [];
+
+        function calcular() {
+            lista = document.getElementById("entrada");
+            var numero = document.querySelector("#numero").value;
+            var operador = document.querySelector("#operador").value;
+            numeros.push(area.numero.value)
+            operandos.push(area.operador.value)
+            a = lista.innerHTML;
+            for(i=0;i<10;i++) {
+                var resultado = eval(`${numeros[numeros.length - 1]} ${operandos[operandos.length - 1]} ${(i+1)}`)
+                a = lista.innerHTML = a + 
+                '<tr>' +
+                '<td>' + numeros[numeros.length - 1] + '</td>' +
+                '<td>' + operandos[operandos.length - 1] +  '</td>' +
+                '<td>' + (i+1) + '</td>' +
+                "<td>" + resultado + '</td>' +
+                '</tr>';
+            }
+            console.log(numeros);
+            console.log(operandos);
+        }
+    </script>
+</head>
+<body>
+    <h2>Digite um número:</h2>
+    <form name="area">
+        <input type="text" id="numero" name="numero">
+        <input type="text" id="operador" name="operador">
+        <input type="button" onclick="calcular()" value="enviar para a tabela">
+    </form>
+    <br><br>
+    <br>
+    <table>
+        <tr>
+            <td>Operando 1</td>
+            <td>Operacao</td>
+            <td>Operando 2</td>
+            <td>Resultado</td>
+        </tr>
+        <tbody id="entrada" style="text-align: center;">
+        </tbody>
+    </table>
+</body>
+</html>
