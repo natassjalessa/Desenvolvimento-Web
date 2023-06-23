@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"/> -->
+    <link href="bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="pag20.css" type="text/css" />
+    <title>BS 5 - Cores e colunas</title>
+  </head>
+  <body>
+    Mesmo que utilizemos o BootStrap,<br> 
+    podemos utilizar em conjunto nosso próprio CSS,<br>
+    como na formatação de h3 border-bottom: 2px dashed orange
+    <h3>Faremos a primeira subdivisão de colunas equalitárias</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 bg-primary">3 colunas-4,4,4</div>
+            <div class="col-4 bg-success">com bg primary e sucess</div>
+            <div class="col-4 bg-danger">e com bg danger no fim</div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 bg-primary">3 colunas-4,4,4</div>
+            <div class="col-4 bg-success">só que desta vez</div>
+            <div class="col-4 bg-danger">utilizando o container-fluid</div>
+        </div>
+    </div>
+    <h3>Faremos a segunda com duas colunas 5 e 4 com justify-content-around</h3>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-5 bg-primary">2 colunas 4 e 5 around</div>
+            <div class="col-4 bg-success">com bg primary e sucess</div>
+        </div>
+    </div>
+    <h3>Faremos a terceira com mais do que 12 colunas para haver a quebra de linha</h3>
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-3 bg-secondary">3 colunas-3,4,5</div>
+        <div class="col-5 bg-warning">com bg primary, sucess e danger</div>
+        <div class="col-5 bg-info">deu mais do que 12, logo quebra mesmo fluid</div>
+      </div>
+    </div>
+
+    <a href="index.html">Retornar à página Principal.</a>
+  </body>
+</html>
